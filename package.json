@@ -1,0 +1,35 @@
+{
+  "name": "nightpalette",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Rafa Zoldan",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "build-css": "tailwind build node_modules/tailwindcss/tailwind.css -o src/style.css",
+    "predev": "yarn build-css",
+    "dev": "webpack serve --mode development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-react": "^7.13.13",
+    "@svgr/webpack": "^5.5.0",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "postcss": "^8.2.9",
+    "prettier": "^2.2.1",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.0.4",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
