@@ -4,6 +4,7 @@
   "main": "src/index.js",
   "author": "Rafa Zoldan",
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
