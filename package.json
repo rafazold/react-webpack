@@ -1,18 +1,19 @@
 {
-  "name": "nightpalette",
+  "name": "githubsearch",
   "version": "1.0.0",
   "main": "src/index.js",
   "author": "Rafa Zoldan",
-  "license": "MIT",
+  "license": "",
   "private": true,
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
   "scripts": {
     "build-css": "tailwind build node_modules/tailwindcss/tailwind.css -o src/style.css",
     "predev": "yarn build-css",
     "dev": "webpack serve --mode development"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.13.14",

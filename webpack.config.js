@@ -23,7 +23,7 @@ module.exports = {
   },
   plugins: [
     new HtmlPlugin({
-      title: 'Night Palette',
+      title: 'Github Search',
     }),
   ],
   devServer: {
