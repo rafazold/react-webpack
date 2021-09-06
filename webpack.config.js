@@ -8,7 +8,7 @@ const context = resolve(__dirname, 'src');
 
 module.exports = {
   output: {
-    publicPath: publicPath,
+    publicPath,
     path: resolve(__dirname, 'dist'),
   },
   module: {
@@ -23,6 +23,10 @@ module.exports = {
       },
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
       { test: /\.svg$/, loader: '@svg/webpack' },
+      {
+        test: /\.(png|jpe?g|ico|gif|woff2?|ttf|eot)(\?-.*)?$/,
+        loader: 'url-loader',
+      },
     ],
   },
   resolve: {
@@ -37,11 +41,4 @@ module.exports = {
     }),
     new Dotenv(),
   ],
-  devServer: {
-    hot: true,
-    inline: true,
-    historyApiFallback: true,
-    progress: true,
-    compress: true,
-  },
 };
